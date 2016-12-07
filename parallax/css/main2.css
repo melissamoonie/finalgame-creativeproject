@@ -1,0 +1,199 @@
+body {
+	  background: url('img/cartoon1.png') 50% 50% no-repeat;
+
+	margin: 0;
+	padding: 0;
+}
+
+.centerme{
+	position: center;
+}
+.parallax {
+	background: url('img/cartoon1.png') 50% 50% no-repeat;
+	font-family: 'Aref Ruqaa', sans-serif;
+	height: 100vh;
+	perspective: 1px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 3vw;
+}
+
+@media only screen and (max-width: 500px) {
+	.parallax {
+	
+		font-size: 5vw !important;
+	}
+	
+}
+
+.parallax-layer img {
+	width: 100vw;
+	position: absolute;
+}
+
+.parallax-layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding-top: 50vh;
+}
+
+.parallax-0 {
+	z-index: 1;
+	transform: translateZ(-1px) scale(2);
+}
+
+.parallax-1 {
+	z-index: 7;
+	transform: translateZ(-2px) scale(3);
+}
+
+.parallax-2 {
+	z-index: 5;
+	transform: translateZ(-3px) scale(4);
+}
+
+.parallax-3 {
+	z-index: 7;
+	transform: translateZ(-4px) scale(5);
+
+}
+
+.parallax-4 {
+	z-index: 9;
+	transform: translateZ(-1px) scale(2);
+}
+
+.parallax-5 {
+	z-index: 11;
+	transform: translateZ(-0.8px) scale(1.8);
+}
+
+.parallax-6 {
+	z-index: 9;
+	transform: translateZ(-1px) scale(2);
+}
+
+.parallax-7 {
+	z-index: 11;
+	transform: translateZ(-0.8px) scale(11.8);
+}
+
+.parallax-8 {
+	z-index: 10;
+	transform: translateZ(-0.9px) scale(1.9);
+}
+
+
+.parallax {
+	  background: rgba(76,76,76,1);
+
+}
+
+p {
+	position: absolute;
+	color: #201856;
+}
+
+#textlayer1 {
+/*	margin-top: 15vw;*/
+	left: 10%
+	z-index: 1;
+}
+
+#textlayer2 {
+	margin-top: 10vw;
+	left: 26vw;
+	z-index: 4;
+}
+
+#textlayer3 {
+	margin-top: 20%
+	left: 30%	
+	z-index: 1;
+}
+
+#textlayer4 {
+	margin-top: 25vw;
+	left: 26%;
+	z-index: 10;
+
+}
+
+#layer1 {
+	width: 25vw;
+	margin-top: 10vw;
+	margin-left: 20vw;
+	z-index: 8;
+}
+
+#layer2 {
+	width: 40vw;
+	margin-top: 20vw;
+	margin-left: -5vw;
+}
+
+#layer3 {
+	width: 50vw;
+	margin-left: 50vw;
+	margin-top: 17vw;
+
+}
+
+#layer4 {
+	width: 20vw;
+	margin-left: 75vw;
+	margin-top: 25vw;
+
+}
+
+#small{
+	size: 40%
+}
+
+#small2{
+	size: 20%
+}
+
+.box {
+	background: rgba(140,140,140,0.7);
+	border: solid 3px rgba(0,0,0,0.8);
+	padding: 3px 3px 3px 3px;
+	margin-bottom: 16px;
+	float: left;
+}
+
+.parallax-upper {
+	position: absolute;
+	padding-top: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9;
+}
+
+.parallax-upper2 {
+	position: absolute;
+	
+	z-index: 10;
+}
+
+.parallax-upper img {
+	position: absolute;
+
+}
+
+#purseedit {
+	margin-top: 40%;
+	margin-left: 10%;
+	z-index: 8;
+}
+.parallax-layer-8 a {
+	position: absolute;
+	margin-top: 85vw;
+	margin-left: 30%
+	z-index: 8;
+}

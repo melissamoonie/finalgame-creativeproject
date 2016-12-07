@@ -1,0 +1,51 @@
+
+
+body{
+
+	/*code from cssmatic.com background gradient generator*/
+background: rgba(255,255,255,1);
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 17%, rgba(255,13,208,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(17%, rgba(246,246,246,1)), color-stop(100%, rgba(255,13,208,1)));
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 17%, rgba(255,13,208,1) 100%);
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 17%, rgba(255,13,208,1) 100%);
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 17%, rgba(255,13,208,1) 100%);
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 17%, rgba(255,13,208,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ff0dd0', GradientType=0 );
+font-family: Impact, Charcoal, sans-serif;
+}
+
+main{
+	display:flex;
+	justify-content: space-around;
+	flex-direction: row;
+
+font-family: Impact, Charcoal, sans-serif;
+
+}
+
+img {max-width:100%}
+
+h2{
+	background-color: white;
+	border: dashed  3px black;
+	max-width: 100%;
+
+font-family: Impact, Charcoal, sans-serif;
+font-size: 28px;
+max-width: 300px;
+}
+main section{
+	width: 100%;
+	
+	background: #00FF00;
+	border: solid 4px black;
+
+}
+
+@media only screen and (max-width: 550px){
+main{
+
+	flex-flow: column;
+	flex-direction: column;
+}
+	}/* end media query block */
