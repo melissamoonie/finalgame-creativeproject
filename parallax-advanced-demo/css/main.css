@@ -1,0 +1,169 @@
+/*universal styles*/
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/*parallax styles*/
+
+.parallax {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallaxLayer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.group {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  transform-style: inherit;
+  background: 50% 50% / cover;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+.group:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: 50% 50% / cover;
+}
+
+/*base styles*/
+
+.base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0) scale(1);
+  z-index: 5;
+}
+
+.base2 {
+  -webkit-transform: translateZ(-50px) scale(1.2);
+  transform: translateZ(-50px) scale(1.2);
+  z-index: 6;
+}
+
+/*group styles*/
+
+
+/* slide over group 2 */
+#group1 {
+  z-index: 8;
+}
+
+#group1 .base {
+  background: #7C00FF;
+}
+
+/* slide under groups 1 and 3 */
+#group2 {
+  z-index: 6;
+}
+
+#group2 .base {
+  background: url('img/pursenew.png') 50% 50% no-repeat;
+  background-size: cover;
+  background: black;
+}s
+
+#group2 .base2 {
+  background: url('img/pursenew.png') 50% 50% no-repeat;
+  background-size: cover;
+  opacity: .5;
+}
+
+/* slide over group 2*/
+#group3 {
+  z-index: 7; 
+}
+
+#group3 .base {
+  background: url('../img/pursenewedit.png') 50% 50% no-repeat;
+  background-size: cover;
+}
+
+
+/*content styles*/
+
+.title {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #002062;
+  font-size: 80px;
+  font-family: serif;
+  text-align: center;
+  position: absolute;
+  z-index: 999;
+  background-color: #79064C;
+  border: solid 8px black;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+  font-family: sans-serif;
+  line-height: 40px;
+  padding: 20px;
+  width: 70%;
+  left: 4%;
+  bottom: 50%;
+  background: rgba(0, 10, 10, 0.4);
+  border-radius: 25px;
+  transform: translateZ(100px) scale(0.6);
+  position: absolute;
+  z-index: 999;
+}
+
+figure {
+    width: 20%;
+    left: 47%;
+    bottom: 40%;
+    transform: translateZ(200px) scale(0.6);
+    position: absolute;
+    z-index: 999;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
